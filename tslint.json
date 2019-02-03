@@ -1,0 +1,37 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-airbnb",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "max-line-length": [
+      true,
+      {
+        "limit": 120,
+        "ignore-pattern": "'.*'"
+      }
+    ],
+    "object-shorthand-properties-first": false,
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-pascal-case"
+    ],
+    "interface-name": false,
+    "max-classes-per-file": false,
+    "jsx-no-lambda": false,
+    "quotemark": [true, "single", "jsx-double"],
+    "prefer-array-literal": false
+  },
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "src/generated*",
+      "coverage/lcov-report/*.js"
+    ]
+  }
+}
