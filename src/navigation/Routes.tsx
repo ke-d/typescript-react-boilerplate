@@ -54,13 +54,10 @@ class Routes extends React.Component {
       );
     }
     return (
-      <Alert
-        message="Error Text"
-        description="Oh Snap! You got an error!"
-        type="error"
-        closable={true}
-        onClose={this.handleDismiss}
-      />
+      <Alert color="danger" toggle={() => this.handleDismiss()}>
+        Oh Snap! You got an error!
+        <p>{error.message}</p>
+      </Alert>
     );
   }
 }
