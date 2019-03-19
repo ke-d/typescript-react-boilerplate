@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "homepage": "https://github.com/mrdokenny/typescript-react-boilerplate",
   "dependencies": {
+    "apollo-boost": "^0.3.1",
     "bootstrap": "^4.2.1",
+    "graphql": "^14.1.1",
+    "graphql-tag": "^2.10.1",
     "react": "^16.7.0",
+    "react-apollo": "^2.5.2",
     "react-dom": "^16.7.0",
     "react-router-dom": "^4.3.1",
     "react-social-icons": "^4.1.0",
@@ -13,6 +17,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode=development  --devtool eval-source-map --history-api-fallback --open",
     "build": "webpack --mode=production",
+    "generate": "node codegen.js",
     "lint": "tslint 'src/**/*.{ts,tsx}'",
     "test-all": "npm run lint"
   },
@@ -24,6 +29,10 @@
     "@types/reactstrap": "^7.1.2",
     "css-loader": "^2.1.0",
     "file-loader": "^3.0.1",
+    "graphql-code-generator": "^0.16.1",
+    "graphql-codegen-typescript-client": "^0.18.0",
+    "graphql-codegen-typescript-common": "^0.16.1",
+    "graphql-codegen-typescript-react-apollo": "^0.16.1",
     "img-loader": "^3.0.1",
     "source-map-loader": "^0.2.4",
     "style-loader": "^0.23.1",
