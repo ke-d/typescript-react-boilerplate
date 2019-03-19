@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Jumbotron } from 'reactstrap';
+import { Button, Container, Jumbotron } from 'reactstrap';
+import FindUser from '../components/FindUserParent';
+import Registration from '../components/Registration';
 
 class Home extends React.Component {
   public render() {
@@ -23,6 +25,11 @@ class Home extends React.Component {
             </Link>
           </p>
         </Jumbotron>
+        <Container>
+          <Registration />
+          <br />
+          <FindUser />
+        </Container>
       </div>
     );
   }
